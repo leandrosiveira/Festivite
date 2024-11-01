@@ -8,7 +8,8 @@
   & .border-cicle {
     width: 2.5rem;
     height: 2.5rem;
-    
+    border-radius: 50%;
+    background-color: var(--shape-button);
 
     display: flex;
     justify-content: center;
@@ -18,19 +19,19 @@
 
     margin-block: 0.25rem;
 
-    & input {
-      border: 1px solid var(--shape-button);
-      outline: 2px solid var(--shape-button);
+    &:hover {
+      background-color: var(--input-stroke);
     }
     
     
     & input {
       border-radius: 50%;
-      width: 2.225rem;
-      height: 2.225rem;
-      background-color: var(--shape-button);
+      width: calc(100% - 3px);
+      height: calc(100% - 3px);
+      background-color: var(--transparent);
       cursor: pointer;
       position: absolute;
+      border: none;
       margin: 0;
 
       &:focus {
@@ -97,5 +98,56 @@
 @media (max-width: 900px) {
   #colors-container {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+#event-theme-container {
+  & .card-theme {
+    width: 8.375rem;
+    height: 6.4375rem;
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+    &:hover {
+      background-color: var(--input-stroke);
+    }
+
+    & input {
+      margin: 0;
+      margin-top: 1px;
+      border: none;
+      background-color: var(--transparent);
+      z-index: 1;
+      width: calc(8.375rem - 4px);
+      height: calc(6.4375rem - 4px);
+      border-radius: 0.4rem;
+      position: absolute;
+      cursor: pointer;
+
+      &:focus {
+        outline-width: 2px;
+      }
+    }
+
+    & img {
+      filter: none;
+      width: calc(8.375rem - 8px);
+      height: 66%;
+      position: absolute;
+      margin: 0;
+      object-fit: cover;
+      border-radius: 0.3rem;
+      margin-top: 2.5px;
+    }
+
+    & label {
+      position: absolute;
+      top: 74%; 
+    }
   }
 }

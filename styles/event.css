@@ -76,7 +76,6 @@
 
         &:focus {
           background-color: var(--shape-button);
-          color: red;
         }
       }
     }
