@@ -26,8 +26,8 @@
     
     & input {
       border-radius: 50%;
-      width: calc(100% - 3px);
-      height: calc(100% - 3px);
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
       background-color: var(--transparent);
       cursor: pointer;
       position: absolute;
