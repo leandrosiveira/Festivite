@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>Fomulário de convite</title>
+
+</head>
+<body>
+
+  <div id="container-project">
+    <section id="brand">
+      <img src="styles/assets/img_brand/Logo.svg" alt="">
+      <h1>Festivite</h1>
+      <p>Crie um convite digital para o seu evento</p>
+    </section>
+    <section id="invite">
+      <main>
+        <h1>Crie seu convite</h1>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset id="event">
+            <legend class="flex">
+              <img src="styles/assets/icons/calendar.png" alt="Icone de calendário">
+              Sobre o evento
+            </legend>
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input type="text" id="title" name="Título" placeholder="Nome do Evento">
+            </div>
+            <div class="flex-gap-1rem">
+              <div class="input-wrapper flex-1">
+                <label for="data-start">Início</label>
+                <input type="date" id="data-start" lang="pt-br" name="Data-inicial">
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="data-end">Fim</label>
+                <input type="date" id="data-end" lang="pt-br" name="Data-final">
+              </div>
+            </div>
+            <div class="flex-gap-1rem">
+              <div class="radio-wrapper  flex-1">
+                <legend>Tipo</legend>
+                <div class="flex">
+                  <div id="button-transition"></div>
+                  <div class="container-inperson flex-1">
+                    <input type="radio" name="tipo" value="presencial" id="in-person">
+                    <img src="styles/assets/icons/building-2.png" alt="">
+                    <label for="in-person">Presencial</label>
+                  </div>
+                  <div class="container-online radio-wrapper flex-1">
+                    <input type="radio" name="tipo" value="online" id="online">
+                    <img src="styles/assets/icons/video.png" alt="">
+                    <label for="online">Online</label>
+                  </div>
+                </div>
+              </div>  
+              <div class="input-wrapper flex-1">
+                <label for="local">Local</label>
+                <input type="text" id="local"  name="local">
+              </div>
+            </div> 
+
+            <div class="description">
+              <label for="description">Descrição</label>
+              <textarea id="description" name="description" placeholder="Escreva sobre os detalhes do evento" ></textarea>
+            </div>
+          </fieldset>
+          <div id="custom">
+            <fieldset id="color">
+              <legend class="flex">
+                <img src="styles/assets/icons/paintbrush-vertical.png" alt="">
+                Personalização
+              </legend>
+              <label>Cor principal</label>
+              <div id="colors-container">
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="blue" id="blue">
+                  <label id="blue-cicle" class="cicle" for="blue"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="navy" id="navy">
+                  <label id="navy-cicle" class="cicle" for="navy"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="purple" id="purple">
+                  <label id="purple-cicle" class="cicle" for="purple"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="fuschia" id="fuschia">
+                  <label id="fuschia-cicle" class="cicle" for="fuschia"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="pink" id="pink">
+                  <label id="pink-cicle" class="cicle" for="pink"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="danger" id="danger">
+                  <label id="danger-cicle" class="cicle" for="danger"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="orange" id="orange">
+                  <label id="orange-cicle" class="cicle" for="orange"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="yellow" id="yellow">
+                  <label id="yellow-cicle" class="cicle" for="yellow"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="lime" id="lime">
+                  <label id="lime-cicle" class="cicle" for="lime"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="green" id="green">
+                  <label id="green-cicle" class="cicle" for="green"></label>
+                </div>
+                <div class="border-cicle">
+                  <input type="radio" name="color" value="cyan" id="cyan">
+                  <label id="cyan-cicle" class="cicle" for="cyan"></label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+            <div id="info"></div>
+            <div id="footer"></div>
+        </form>
+      </main>
+    </section> 
+  </div> 
+
+<link rel="stylesheet" href="styles/index.css">  
+</body>
+</html>

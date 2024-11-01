@@ -1,0 +1,37 @@
+#brand {
+  background-image: url(assets/img_brand/Background.png);
+  background-position: 50% 40%;
+  
+  padding: 2rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  & img {
+    width: 2.86rem;
+    height: 3rem;
+  }
+
+  & h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-block: 1rem 0.25rem;
+  }
+
+  & p {
+    font: 300 16px var(--font-family-OpenSans);
+    color: var(--text-heading);
+  }
+}
+
+@media (max-width: 600px) {
+  #brand {
+    padding: 5vw;
+    background-position: 1% 88%;
+    background-size: 1300px;
+    display: grid;
+  }
+}

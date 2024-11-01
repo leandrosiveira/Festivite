@@ -1,0 +1,79 @@
+#invite {
+
+  background-color: var(--shape-body);
+  border-radius: 1rem;
+  padding: 7vw;
+  overflow: auto;
+  scrollbar-width: none;
+
+  & main h1 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+  }
+}
+
+fieldset {
+  border: none;
+  margin-top: 2.5rem;
+
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) saturate(100%) invert(61%) sepia(13%) saturate(251%) hue-rotate(160deg) brightness(92%) contrast(88%);
+    margin-right: 0.75rem;
+  }
+
+  & legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+  }
+}
+
+input {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  padding-inline: 1rem;
+  margin-block: 0.75rem 1rem;
+  font: var(--body-md);
+  color: var(--input-placeholder);
+} 
+
+.flex {
+  display: flex;
+}
+
+.flex-gap-1rem {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1
+}
+
+.flex-2 {
+  flex: 2
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #3996DB;
+}
+
+@media (max-width: 600px) {
+  #container-project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 3fr;
+  }
+}

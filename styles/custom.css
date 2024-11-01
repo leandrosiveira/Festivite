@@ -1,0 +1,101 @@
+#colors-container {
+  padding-block: 0.75rem 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  
+  
+  & .border-cicle {
+    width: 2.5rem;
+    height: 2.5rem;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-block: 0.25rem;
+
+    & input {
+      border: 1px solid var(--shape-button);
+      outline: 2px solid var(--shape-button);
+    }
+    
+    
+    & input {
+      border-radius: 50%;
+      width: 2.225rem;
+      height: 2.225rem;
+      background-color: var(--shape-button);
+      cursor: pointer;
+      position: absolute;
+      margin: 0;
+
+      &:focus {
+       outline: 2px solid #3996DB;  
+      } 
+    }
+  
+    & #blue-cicle {
+      
+      background-color: var(--brand-light);
+      
+    }
+
+    & #navy-cicle {
+      background-color: var(--navy);
+    }
+
+    & #purple-cicle {
+      background-color: var(--purple);
+    }
+
+    & #fuschia-cicle {
+      background-color: var(--fuschia);
+    }
+
+    & #pink-cicle {
+      background-color: var(--pink);
+    }
+
+    & #danger-cicle {
+      background-color: var(--danger);
+    }
+
+    & #orange-cicle {
+      background-color: var(--orange);
+    }
+
+    & #yellow-cicle {
+      background-color: var(--yellow);
+    }
+
+    & #lime-cicle {
+      background-color: var(--lime);
+    }
+
+    & #green-cicle {
+      background-color: var(--green);
+    }
+
+    & #cyan-cicle {
+      background-color: var(--cyan);
+    }
+
+    & .cicle {
+      border-radius: 50%;
+      width: 1.75rem;
+      height: 1.75rem;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #colors-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
