@@ -35,7 +35,8 @@
       margin: 0;
 
       &:focus {
-       outline: 2px solid #3996DB;  
+       outline: 2px solid #3996DB; 
+       outline-offset: .1px; 
       } 
     }
   
