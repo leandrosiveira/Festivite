@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +16,7 @@
   <title>Fomulário de convite</title>
 
 </head>
+
 <body>
 
   <div id="container-project">
@@ -47,30 +51,33 @@
             </div>
             <div id="media-resposively-grid" class="flex-gap-1rem">
               <div class="radio-wrapper  flex-1">
-                <legend>Tipo</legend>
-                <div class="flex">
-                  <div id="button-transition"></div>
-                  <div class="container-inperson flex-1">
-                    <input type="radio" name="tipo" value="presencial" id="in-person">
-                    <img src="styles/assets/icons/building-2.png" alt="">
-                    <label for="in-person">Presencial</label>
+                <fieldset>
+                  <legend>Tipo</legend>
+                  <div class="flex">
+                    <div id="button-transition"></div>
+                    <div class="container-inperson flex-1">
+                      <input type="radio" name="tipo" value="presencial" id="in-person">
+                      <img src="styles/assets/icons/building-2.png" alt="">
+                      <label for="in-person">Presencial</label>
+                    </div>
+                    <div class="container-online radio-wrapper flex-1">
+                      <input type="radio" name="tipo" value="online" id="online">
+                      <img src="styles/assets/icons/video.png" alt="">
+                      <label for="online">Online</label>
+                    </div>
                   </div>
-                  <div class="container-online radio-wrapper flex-1">
-                    <input type="radio" name="tipo" value="online" id="online">
-                    <img src="styles/assets/icons/video.png" alt="">
-                    <label for="online">Online</label>
-                  </div>
-                </div>
-              </div>  
+                </fieldset>
+              </div>
               <div class="input-wrapper flex-1">
                 <label for="local">Local</label>
-                <input type="text" id="local"  name="local">
+                <input type="text" id="local" name="local">
               </div>
-            </div> 
+            </div>
 
             <div class="description">
               <label for="description">Descrição</label>
-              <textarea id="description" name="description" placeholder="Escreva sobre os detalhes do evento" ></textarea>
+              <textarea id="description" name="description"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
             </div>
           </fieldset>
           <div id="custom">
@@ -193,13 +200,71 @@
               </section>
             </fieldset>
           </div>
-            <div id="info"></div>
-            <div id="footer"></div>
+          <div id="custom-style-upload">
+            <fieldset>
+              <div id="style-upload-container">
+                <fieldset>
+                  <label for="">Estilo</label>
+                  <div id="toggle-container">
+                    <div id="toggle">
+                      <div id="toggle-box">
+                        <div id="toggle-button"></div>
+                        <input type="checkbox" name="tipo" id="toggle-input">
+                      </div>
+                    </div>
+                    <span>Escuro</span>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <label for="">Foto de capa</label>
+                  <div id="upload-container">
+                    <div id="upload-button-container">
+                      <input type="file" id="button-upload" name="file">
+                      <img src="styles/assets/icons/upload.png" alt="">
+                      <label for="button-upload">Selecionar</label>
+                    </div>
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
+                </fieldset>
+
+              </div>
+            </fieldset>
+          </div>
+          <div id="info">
+            <fieldset>
+              <legend class="flex">
+                <img src="styles/assets/icons/contact.png" alt="">
+                Dados para contato
+              </legend>
+              <div class="input-wrapper" id="input-required">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Nome completo" required>
+                <div class="error">
+                  <img src="styles/assets/icons/circle-alert.png" alt="icone de alerta vermelho">
+                  <span>Campo Obrigatório</span>
+                </div>
+              </div>
+
+              <div class="flex-gap-1rem">
+                <div class="input-wrapper flex-1">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="tel">Telefone</label>
+                  <input type="tel" id="tel" name="tel" placeholder="(99) 99999-9999">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div id="footer"></div>
         </form>
       </main>
-    </section> 
-  </div> 
+    </section>
+  </div>
 
-<link rel="stylesheet" href="styles/index.css">  
+  <link rel="stylesheet" href="styles/index.css">
 </body>
+
 </html>
