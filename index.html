@@ -57,13 +57,18 @@
                     <div id="button-transition"></div>
                     <div class="container-inperson flex-1">
                       <input type="radio" name="tipo" value="presencial" id="in-person">
-                      <img src="styles/assets/icons/building-2.png" alt="">
-                      <label for="in-person">Presencial</label>
+                      
+                      <label for="in-person">
+                        <img src="styles/assets/icons/building-2.png" alt="">
+                        Presencial
+                      </label>
                     </div>
                     <div class="container-online radio-wrapper flex-1">
                       <input type="radio" name="tipo" value="online" id="online">
-                      <img src="styles/assets/icons/video.png" alt="">
-                      <label for="online">Online</label>
+                      <label for="online">
+                        <img src="styles/assets/icons/video.png" alt="">
+                        Online
+                      </label>
                     </div>
                   </div>
                 </fieldset>
@@ -139,62 +144,62 @@
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/birthday.png" alt="Imagem para tema de aniversário">
                     <label for="birthday">Aniversário</label>
-                    <input type="radio" nome="theme" value="birthday" id="birthday">
+                    <input type="radio" name="theme" value="birthday" id="birthday">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/kids.png" alt="Imagem para tema infantil">
                     <label for="kids">Infantil</label>
-                    <input type="radio" nome="theme" value="kids" id="kids">
+                    <input type="radio" name="theme" value="kids" id="kids">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/graduation.png" alt="Imagem para tema de formatura">
                     <label for="graduation">Aniversário</label>
-                    <input type="radio" nome="theme" value="graduation" id="graduation">
+                    <input type="radio" name="theme" value="graduation" id="graduation">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/married.png" alt="Imagem para tema de casamento">
                     <label for="married">Casamento</label>
-                    <input type="radio" nome="theme" value="married" id="married">
+                    <input type="radio" name="theme" value="married" id="married">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/baby-tea.png" alt="Imagem para tema de vhá de BB">
                     <label for="baby-tea">Chá de Bebê</label>
-                    <input type="radio" nome="theme" value="baby-tea" id="baby-tea">
+                    <input type="radio" name="theme" value="baby-tea" id="baby-tea">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/pan-tea.png" alt="Imagem para tema de chá de panela">
                     <label for="pan-tea">Chá de panela</label>
-                    <input type="radio" nome="theme" value="pan-tea" id="pan-tea">
+                    <input type="radio" name="theme" value="pan-tea" id="pan-tea">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/carnaval.png" alt="Imagem para tema de carnaval">
                     <label for="carnaval">Carnaval</label>
-                    <input type="radio" nome="theme" value="carnaval" id="carnaval">
+                    <input type="radio" name="theme" value="carnaval" id="carnaval">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/easter.png" alt="Imagem para tema de pascoa">
                     <label for="easter">Páscoa</label>
-                    <input type="radio" nome="theme" value="easter" id="easter">
+                    <input type="radio" name="theme" value="easter" id="easter">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/sao-joao.png" alt="Imagem para tema de são joão">
                     <label for="sao-joao">Aniversário</label>
-                    <input type="radio" nome="theme" value="sao-joao" id="sao-joao">
+                    <input type="radio" name="theme" value="sao-joao" id="sao-joao">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/halloween.png" alt="Imagem para tema de halloween">
                     <label for="helloween">Helloween</label>
-                    <input type="radio" nome="theme" value="helloween" id="helloween">
+                    <input type="radio" name="theme" value="helloween" id="helloween">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/cristhimas.png" alt="Imagem para tema de natal">
                     <label for="christmas">Natal</label>
-                    <input type="radio" nome="theme" value="christmas" id="christmas">
+                    <input type="radio" name="theme" value="christmas" id="christmas">
                   </div>
                   <div class="card-theme">
                     <img src="styles/assets/img_theme/others.png" alt="Imagem para tema de outros">
                     <label for="others">Outros</label>
-                    <input type="radio" nome="theme" value="others" id="others">
+                    <input type="radio" name="theme" value="others" id="others">
                   </div>
                 </div>
               </section>
@@ -221,8 +226,10 @@
                   <div id="upload-container">
                     <div id="upload-button-container">
                       <input type="file" id="button-upload" name="file">
-                      <img src="styles/assets/icons/upload.png" alt="">
-                      <label for="button-upload">Selecionar</label>
+                      <label for="button-upload">
+                        <img src="styles/assets/icons/upload.png" alt="">
+                        Selecionar
+                      </label>
                     </div>
                     <span>Nenhum arquivo selecionado</span>
                   </div>
@@ -258,7 +265,36 @@
               </div>
             </fieldset>
           </div>
-          <div id="footer"></div>
+          <div id="footer">
+            <div class="line"></div>
+            <div class="check-container">
+              <div class="radio-img"></div>
+              <input type="checkbox" id="agree" name="termos-e-condicoes">
+              <label for="agree">
+                Li e concordo com os 
+                <a href="">Termos e Condições</a>  e com a 
+                <a href="">Política de Privacidade</a>
+              </label>
+            </div>
+            <div class="check-container">
+              <div class="radio-img"></div>
+              <input type="checkbox" id="emails" name="news-email">
+              <label for="emails">
+                Aceito receber atualizações e promoções por e-mail
+              </label>
+            </div>
+            <div class="check-container">
+              <div class="radio-img"></div>
+              <input type="checkbox" id="sms" name="newa-sms">
+              <label for="sms">
+                Aceito receber atualizações e promoções por SMS
+              </label>
+            </div>
+            <button type="submit" class="generation-invitation-button">
+              <img src="styles/assets/icons/ticket.png" alt="imagem de ticket para gerar convite">
+              <span>Gerar Convite</span>
+            </button>
+          </div>
         </form>
       </main>
     </section>

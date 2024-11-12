@@ -8,6 +8,11 @@
   position: relative;
 
   .radio-wrapper {
+
+    & fieldset {
+      margin-top: 0rem;
+    }
+
     .container-inperson {
       display: flex;
       justify-content: center;
@@ -15,18 +20,29 @@
       border-radius: 0.3rem;
       cursor: pointer;
       position: relative;
+      
 
       & input {
         all: unset;
         position: absolute;
         border-radius: 0.3rem;
         z-index: 1;
+        opacity: 0;
         width: 99.5%;
         height: 100%;
         margin-right: 0.5%;
+        border: 1px solid red;
+      }
+      
+      &:has(:checked) {
 
-        &:focus {
-          background-color: var(--shape-button);
+        background-color: var(--shape-button);
+        & label {
+
+          color: var(--text-body);
+          & img {
+            filter: brightness(0) saturate(100%) invert(71%) sepia(21%) saturate(5764%) hue-rotate(181deg) brightness(100%) contrast(102%);
+          }
         }
       }
     }
@@ -74,8 +90,16 @@
         height: 100%;
         margin-left: 1.5%;
 
-        &:focus {
-          background-color: var(--shape-button);
+        
+      }
+      &:has(:checked) {
+        background-color: var(--shape-button);
+        & label {
+        color: var(--text-body);
+
+          & img {
+            filter: brightness(0) saturate(100%) invert(71%) sepia(21%) saturate(5764%) hue-rotate(181deg) brightness(100%) contrast(102%);
+          }
         }
       }
     }
@@ -93,9 +117,11 @@
     }
 
     & label {
+      display: flex;
+      align-items: center;
       z-index: 1;
       font: var(--body-sm-semibold);
-      color: var(--text-body);
+      color: var(--input-placeholder);
       cursor: pointer;
     }
   }
