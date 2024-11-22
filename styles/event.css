@@ -131,7 +131,7 @@
       display: grid;
     }
   }
-
+ 
   textarea {
     border-radius: 0.5rem;
     border: 1px solid var(--input-stroke);
