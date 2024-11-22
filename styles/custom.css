@@ -176,72 +176,86 @@
 
   & fieldset {
     margin: 0;
-    & #toggle-container {
-      width: 100%;
-      height: 3rem;
-      margin-top: 0.5rem;
-      /* border: 1px solid red; */
+
+    & #toggle {
       display: flex;
       align-items: center;
-
-      & #toggle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
+      width: 8rem;
+      height: 3rem;
+      margin-top: 0.5rem;
+      position: relative;
       
-
-        & #toggle-box {
+      & input {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        position: absolute;
+      }
         
+        & label {
+          cursor: pointer;
           width: 4rem;
           height: 2rem;
           border: 1px solid var(--input-stroke);
-          border-radius: 34px;
-          display: flex;
-          align-items: center;
-          margin: auto auto 0rem 0rem;
-        
-          & #toggle-button {
-            background-color: var(--input-stroke);
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 50%;
-            margin-inline: 0.18rem;
-            position: absolute;
-          }
-
-          & input {
-            all: unset;
-            /* border: 1px solid rgb(17, 0, 255); */
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-
-            &:hover {
-              cursor: pointer;
-            }
-
-          }
+          display: block;
+          border-radius: 1rem;
+          position: relative;
         }
-      } 
+        
+        & label:after {
+          content: '';
+          position: absolute;
+          top: 0.15rem;
+          left: 0.2rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          background: var(--input-stroke);
+          border-radius: 90px;
+          transition: 0.3s;
+        }
+        
+        & input:checked + label {
+          background: var(--brand-light);
+        }
+        
+        & input:checked + label:after {
+          background: var(--text-heading);
+        }
+        
+        & input:checked + label:after {
+          left: calc(100% - 0.2rem);
+          transform: translateX(-100%);
+        }
 
-      & span {
-        margin-inline: 0.75rem 3rem;
-        font: var(--body-sm);
-        color: var(--text-heading);
-      }
+        & span {
+          margin-left: 0.75rem;
+          font: var(--body-sm);
+          color: var(--text-heading);
+        }
+
+        & span + span {
+          display: none;
+        }
+
+        & input:checked + label + span{
+          display: none;
+        }
+
+        & input:checked + label + span + span{
+          display: initial;
+        }
+        
+      }  
     }
-  }
-
-  #upload-container {
-    width: 100%;
-    height: 3rem;
-    margin-top: 0.5rem;
+    
+    #upload-container {
+      width: 100%;
+      height: 3rem;
+      margin-top: 0.5rem;
     /* border: 1px solid rgb(17, 0, 255); */
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
   
 
     & #upload-button-container {
@@ -251,28 +265,13 @@
       position: relative;
       width: 8rem;
       height: 2.5rem;
-      /* border: 1px solid red; */
-      border-radius: 6px;
-      background-color: var(--shape-button);
+      border-radius: 0.5rem;
 
-      &:hover {
-        background-color: var(--shape-hover);
-      }
-      
       & input {
-        
-        margin: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border: 1px solid red;
-        background-color: var(--shape-button);
-        z-index: 1;
-        opacity: 0;
-        cursor: pointer;
-        display:inline-block;
-        
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        position: absolute; 
       }
 
       & img {
@@ -285,11 +284,21 @@
       & label {
         font: var(--body-sm-semibold);
         color: var(--text-heading);
-        z-index: 1;
         cursor: pointer;
         display: flex;
         align-items: center;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        background-color: var(--shape-button);
+        z-index: 1;
 
+        &:hover {
+          background-color: var(--shape-hover);
+        }
       }
     }
 
