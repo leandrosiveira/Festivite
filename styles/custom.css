@@ -210,7 +210,7 @@
           width: 1.5rem;
           height: 1.5rem;
           background: var(--input-stroke);
-          border-radius: 90px;
+          border-radius: 50%;
           transition: 0.3s;
         }
         
